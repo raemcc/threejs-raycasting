@@ -72,7 +72,7 @@ function createBox() {
   let pos = { x: 15, y: scale.y / 2, z: 15 }
 
   let box = new THREE.Mesh(new THREE.BoxBufferGeometry(), 
-      new THREE.MeshPhongMaterial({ color: 0xDC143C }));
+      new THREE.MeshPhongMaterial({ color: 0x1475b5 }));
   box.position.set(pos.x, pos.y, pos.z);
   box.scale.set(scale.x, scale.y, scale.z);
   box.castShadow = true;
@@ -88,7 +88,7 @@ function createSphere() {
   let pos = { x: 15, y: radius, z: -15 };
 
   let sphere = new THREE.Mesh(new THREE.SphereBufferGeometry(radius, 32, 32), 
-      new THREE.MeshPhongMaterial({ color: 0x43a1f4 }))
+      new THREE.MeshPhongMaterial({ color: 0xeb4034 }))
   sphere.position.set(pos.x, pos.y, pos.z)
   sphere.castShadow = true
   sphere.receiveShadow = true
